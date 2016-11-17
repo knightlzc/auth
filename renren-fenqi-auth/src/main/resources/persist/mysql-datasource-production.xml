@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<bean id="fenqiDataSource" class="com.renren.fenqi.auth.util.FenqiXceDataSource">
+		<property name="bizName" value="fenqi" />
+	</bean>
+
+	<bean id="fenqiJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="fenqiDataSource" />
+	</bean>
+
+	<bean id="riskDataSource" class="com.renren.fenqi.airisk.util.FenqiXceDataSource">
+		<property name="bizName" value="fenqi_risk" />
+	</bean>
+	<bean id="riskJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="riskDataSource" />
+	</bean>
+	
+	<bean id="ruleDataSource" class="com.renren.fenqi.airisk.util.FenqiXceDataSource">
+		<property name="bizName" value="rules" />
+	</bean>
+	<bean id="ruleJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="ruleDataSource" />
+	</bean>
+</beans>

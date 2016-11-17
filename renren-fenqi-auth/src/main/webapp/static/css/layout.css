@@ -1,0 +1,575 @@
+@charset "utf-8";
+/******************************************
+@ Author: xuxuejin;
+@ Date: 2015-01-29;
+@ Description: detail CSS;
+******************************************/
+/*首页及登录页面样式*/
+/* common */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  overflow: hidden;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  content: ".";
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.center {
+  text-align: center;
+}
+.top-20 {
+  padding-top: 20px;
+}
+.top-70 {
+  padding-top: 70px;
+}
+.logo a,
+.bottom-logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bottom-line {
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 10px;
+}
+.padding-bootom {
+  padding-bottom: 10px;
+}
+.bootom-10 {
+  margin-bottom: 10px;
+}
+.top-10 {
+  margin-top: 10px;
+}
+.content-list {
+  clear: both;
+  margin-top: 10px;
+  padding: 0 18px;
+}
+.content-list > li {
+  position: relative;
+  clear: both;
+  padding: 0 0 0 18px;
+  min-height: 36px;
+}
+.content-list > li > em {
+  position: absolute;
+  top: 0;
+  left: -11px;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  background: #5BC648;
+  text-align: center;
+  color: #FFF;
+  border-radius: 50%;
+}
+.w33 {
+  width: 33%;
+}
+.w25 {
+  width: 25%;
+}
+/* #login */
+#login {
+  margin-top: 10%;
+}
+.login-form {
+  border: 1px solid #DDD;
+  background: #FFF;
+  border-radius: 5px;
+  padding: 0;
+}
+.login-form form {
+  padding: 10px 15px;
+}
+.login-form h1 {
+  font-size: 18px;
+  padding: 0 15px;
+  line-height: 2.5;
+  background: #EEE;
+  border-bottom: 1px solid #DDD;
+}
+.user-out {
+  padding-right: 5px;
+}
+/* pages */
+.pagination {
+  margin: 0 0 20px;
+  float: right;
+}
+/* search */
+.search {
+  margin-bottom: 20px;
+}
+/* col-infos */
+.col-infos {
+  background: #40A7FE;
+  color: #FFF;
+}
+.col-infos i {
+  padding-right: 5px;
+}
+.col-infos h2 {
+  color: #FFF;
+  font-size: 1.2em;
+}
+.col-infos small {
+  padding-left: 15px;
+}
+.col-infos .btn {
+  margin-top: 6px;
+}
+
+#content {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+}
+#left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 240px;
+  background: #40A7FE;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* frameContent */
+.scrollY {
+  width: 973px;
+  min-width: 973px;
+  height: 100%;
+  padding: 0 8px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+/*详情页面样式*/
+/*查询模块 begin*/
+.queryWrap {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  /*查询模块项*/
+  /*用户注册信息*/
+}
+.queryWrap .query-item {
+  height: 34px;
+  line-height: 34px;
+  margin-bottom: 8px;
+}
+.queryWrap .query-item .item-name {
+  padding-right: 15px;
+  font: normal 14px "Microsoft YaHei", Arial, sans-serif;
+  line-height: 34px;
+}
+.queryWrap .query-item .radio-inline input[type=radio] {
+  position: relative;
+  top: 6px;
+}
+.queryWrap .register-info .info-list {
+  padding-bottom: 8px;
+  overflow: hidden;
+}
+.queryWrap .register-info .list-item {
+  width: 50%;
+}
+.queryWrap .register-info .list-item .item-name {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+.queryWrap .register-info .info-list-spe .list-item .item-name {
+  width: 110px;
+}
+/*详情页模块标题*/
+.mod-title {
+  font: normal 14px "Microsoft YaHei", Arial, sans-serif;
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+.mod-title .user-identity {
+  color: #cc0000;
+}
+/*表格内容样式*/
+.mainTable {
+  margin-top: 8px;
+}
+.mainTable .mod-title {
+  padding-left: 20px;
+}
+.sub-title {
+  font: normal 14px "Microsoft YaHei", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+/*规则表格*/
+.regular-table {
+  text-align: center;
+}
+.regular-table tr th {
+  text-align: center;
+}
+/*红色文字*/
+.data-state {
+  color: #cc0000;
+}
+/*备注*/
+.remark {
+  width: 65%;
+  height: 100%;
+}
+/*输入框外层*/
+.input-wrap {
+  display: inline-block;
+}
+/*提交按钮组*/
+.btn-wrap {
+  padding-bottom: 20px;
+}
+.preBtn,
+.nextBtn {
+  font-size: 40px;
+}
+/*新增弹层*/
+.addwrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.addcontent {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  width: 500px;
+  margin-left: -250px;
+  box-shadow: 0 0 23px 0 #bbb;
+  border-radius: 3px;
+  border: 1px solid #d4d4d4;
+  background: #f8f8f8;
+  padding: 20px;
+  outline: 0 none;
+  overflow: hidden;
+  z-index: 2000;
+  font-size: 14px;
+}
+.addcontent .closewrap {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.addcontent .closewrap .close {
+  float: right;
+  width: 15px;
+  height: 15px;
+  line-height: 20px;
+  padding: 0;
+  border: 0 none;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 1;
+  outline: 0 none;
+  box-shadow: none;
+  background: url("http://a.xnimg.cn/rrloan/img/close-sprite.png") no-repeat;
+}
+.addcontent dl {
+  width: 260px;
+  overflow: hidden;
+  margin: 0 auto 15px;
+}
+.addcontent dt {
+  width: 80px;
+  float: left;
+  color: #333;
+}
+.addcontent dd {
+  width: 180px;
+  float: left;
+  color: #333;
+}
+.addcontent .judge {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.addcontent .judge span {
+  position: relative;
+  padding: 0 0 0 15px;
+  text-align: center;
+}
+.addcontent .judge i {
+  position: absolute;
+  top: 2px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  background: url("http://a.xnimg.cn/rrloan/img/ico-dialog.png") no-repeat;
+}
+.addcontent .judge .error {
+  color: #EB5858;
+}
+.addcontent .judge .succee {
+  color: #89BE5A;
+}
+.addcontent .judge .ico-err {
+  background-position: -42px -50px;
+}
+.addcontent .judge .ico-suc {
+  background-position: -7px -92px;
+}
+.addcontent .btnwrap {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.addcontent .newbtn {
+  color: #fff;
+  border: 1px solid #FFAE00;
+  background: #FFB10A;
+  padding: 5px 25px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 auto;
+}
+.addcontent .newbtn:hover {
+  color: #fff;
+  border: 1px solid #F5A201;
+  background: #F5A201;
+}
+/*新增弹层*/
+/*div列表*/
+.container {
+  width: 960px;
+}
+.listwrap {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-bottom: 0 none;
+  border-right: 0 none;
+}
+.listwrap h2 {
+  text-indent: 10px;
+}
+.listwrap .listtop {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+.listwrap .newrow {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+.listwrap .newrow:hover {
+  background-color: #f5f5f5;
+}
+.listwrap .newrow div {
+  float: left;
+  height: 47px;
+  line-height: 47px;
+  border: 1px solid #ddd;
+  border-top: 0 none;
+  border-left: 0 none;
+  text-indent: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: default;
+}
+.listwrap .newrow div a {
+  text-indent: 0;
+}
+.wd-5 {
+  width: 5%;
+}
+.wd-6 {
+  width: 6%;
+}
+.wd-7 {
+  width: 7%;
+}
+.wd-8 {
+  width: 8%;
+}
+.wd-9 {
+  width: 9%;
+}
+.wd-10 {
+  width: 10%;
+}
+.wd-11 {
+  width: 11%;
+}
+.wd-12 {
+  width: 12%;
+}
+.wd-13 {
+  width: 13%;
+}
+.wd-14 {
+  width: 14%;
+}
+.wd-15 {
+  width: 15%;
+}
+.wd-16 {
+  width: 16%;
+}
+.wd-17 {
+  width: 17%;
+}
+.wd-18 {
+  width: 18%;
+}
+.wd-19 {
+  width: 19%;
+}
+.wd-20 {
+  width: 20%;
+}
+.wd-25 {
+  width: 25%;
+}
+.wd-30 {
+  width: 30%;
+}
+.wd-35 {
+  width: 35%;
+}
+.wd-40 {
+  width: 40%;
+}
+.wd-45 {
+  width: 45%;
+}
+.wd-50 {
+  width: 50%;
+}
+.wd-60 {
+  width: 60%;
+}
+.wd-70 {
+  width: 70%;
+}
+.wd-80 {
+  width: 80%;
+}
+.wd-90 {
+  width: 90%;
+}
+.wd-full {
+  width: 100%;
+}
+/*div列表*/
+/*div列表表单*/
+.listform {
+  width: 100%;
+}
+.listform .listtitle {
+  font-size: 16px;
+  line-height: 30px;
+  text-indent: 10px;
+  font-weight: bold;
+}
+.listform .form-wrap {
+  width: 100%;
+  padding: 0 5%;
+  overflow: hidden;
+}
+.listform .form-wrap .listrow {
+  width: 100%;
+  overflow: hidden;
+}
+.listform .form-wrap .listrow div {
+  float: left;
+  overflow: hidden;
+  height: 30px;
+  line-height: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.infolist {
+  width: 100%;
+}
+.infolist span {
+  display: inline-block;
+  font-size: 14px;
+}
+.infolist input {
+  width: 180px;
+  height: 25px;
+}
+.infolist select {
+  width: 180px;
+  height: 25px;
+}
+.infolist textarea {
+  width: 180px;
+  height: 60px;
+}
+.infolist .infowrap {
+  width: 100%;
+  overflow: hidden;
+}
+.infolist .infowrap .infotitle {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.infolist .infowrap .inforow {
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0 0;
+}
+.infolist .infowrap .inforow div {
+  float: left;
+  overflow: hidden;
+  height: 30px;
+  line-height: 30px;
+}
+.infolist .red {
+  color: red;
+}
+.headline {
+  width: 100%;
+  font-size: 30px;
+  color: #444;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px dotted #666;
+  margin-bottom: 20px;
+}
+.fixedbox {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 230px;
+}
+/*div列表表单*/
