@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.renren</groupId>
+  <artifactId>renren-fenqi-db-tools</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>renren-fenqi-db-tools</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+		<spring.framework.version>4.1.5.RELEASE</spring.framework.version>
+		<mysql.java.connector.version>5.1.33</mysql.java.connector.version>
+		<maven-resources-plugin.version>2.5</maven-resources-plugin.version>
+		<maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
+  </properties>
+	
+  <dependencies>
+    <dependency>
+		<groupId>log4j</groupId>
+		<artifactId>log4j</artifactId>
+		<version>1.2.17</version>
+	</dependency>
+	<dependency>
+		<groupId>commons-logging</groupId>
+		<artifactId>commons-logging</artifactId>
+		<version>1.1.3</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-jdbc</artifactId>
+		<version>${spring.framework.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-tx</artifactId>
+		<version>${spring.framework.version}</version>
+	</dependency>
+	<dependency>
+	  <groupId>joda-time</groupId>
+	  <artifactId>joda-time</artifactId>
+	  <version>2.7</version>
+	</dependency>
+  </dependencies>
+  
+  <build> 
+    <plugins> 
+      <plugin> 
+        <groupId>org.apache.maven.plugins</groupId> 
+        <artifactId>maven-compiler-plugin</artifactId> 
+        <configuration> 
+          <source>1.5</source> 
+          <target>1.5</target> 
+        </configuration> 
+      </plugin> 
+    </plugins> 
+</build>
+  
+</project>
